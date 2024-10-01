@@ -1,0 +1,17 @@
+:root {
+    --color-sazon: #FFCA42; 
+    --color-naranja:#FC6622;
+    --color-verde:#29A54B;
+    --color-azul:#83DFF8;
+    --color-marino:#245BA9;
+    --color-rosa: #F097C1;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    /* font-family: 'Open Sans', sans-serif;
+    font-family: 'Saira Semi Condensed', sans-serif; */
+}
