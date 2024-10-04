@@ -9,7 +9,7 @@
 
 @font-face {
     font-family: KG HAPPY Solid;
-    src: url(/Users/saragonzalez/Library/Fonts/KGHAPPYSolid.ttf);
+    src: url(font/KGHAPPYSolid.ttf);
 }
 
 *{
@@ -19,9 +19,4 @@
     scroll-behavior: smooth;
     /* font-family: 'Open Sans', sans-serif;
     font-family: 'Saira Semi Condensed', sans-serif; */
-}
-
-h1{
-    font-family: KG HAPPY Solid;
-    src: url(/Users/saragonzalez/Library/Fonts/KGHAPPYSolid.ttf);
 }
