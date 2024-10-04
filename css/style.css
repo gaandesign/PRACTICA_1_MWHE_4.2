@@ -8,8 +8,8 @@
 }
 
 @font-face {
-    font-family: KG HAPPY Solid;
-    src: url(font/KGHAPPYSolid.ttf);
+    font-family: "KGHAPPYSolid";
+    src: url(fonts/KGHAPPYSolid.ttf) format('truetype');
 }
 
 *{
@@ -17,6 +17,14 @@
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-family: KGHAPPYSolid;
+    
+    /* font-size: 10px; */
     /* font-family: 'Open Sans', sans-serif;
     font-family: 'Saira Semi Condensed', sans-serif; */
+}
+
+
+#recetas_noticias {
+    background-color: var(--color-verde);
 }
