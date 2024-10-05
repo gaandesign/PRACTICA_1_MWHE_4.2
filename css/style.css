@@ -14,7 +14,7 @@
 
 @font-face {
     font-family: 'Helvetica Neue', sans-serif;
-    src: url('https://fonts.cdnfonts.com/css/helvetica-neue-55');                                           
+    src: url(fonts/Helvetica_Neue);                                           
 }
 
 *{
@@ -29,7 +29,42 @@
     font-family: 'Saira Semi Condensed', sans-serif; */
 }
 
-
 #recetas_noticias {
     background-color: var(--color-verde);
+}
+
+/* GUIA TV */
+#guia_tv {
+    background-color: black;
+    border-radius: 100px 100px 0 0;
+    
+}
+#guia_tv h1 {
+    color: var(--color-azul);
+    text-transform: uppercase;
+    margin-bottom: 0;
+    padding: 1em;
+}
+#guia_tv h2 {
+    color: var(--color-naranja);
+    font-family: 'Helvetica Neue';
+    font-weight: bold;
+    padding-bottom: 1em;
+    margin-bottom: 0;
+}
+
+/* carousel guia TV */
+#carouselGuiaTV .carousel-inner {
+    display: flex;
+}
+
+#carouselGuiaTV .card {
+    border: none;
+    background-color: transparent;
+}
+
+#carouselGuiaTV img {
+    border-radius: 35px;
+    object-fit: cover;
+    height: 200px;
 }
