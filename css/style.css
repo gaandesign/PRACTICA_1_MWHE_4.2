@@ -9,13 +9,15 @@
 
 @font-face {
     font-family: "KGHAPPYSolid";
-    src: url(fonts/KGHAPPYSolid.ttf) format('truetype');
+    src: url(../fonts/KGHAPPYSolid.ttf) format('truetype');
 }
 
 @font-face {
-    font-family: 'Helvetica Neue', sans-serif;
-    src: url(fonts/Helvetica_Neue);                                           
+    font-family: 'Helvetica Neue';
+    font-weight: ;
+    src: url(../fonts/Helvetica_Neue/HelveticaNeueBlack.otf);                                           
 }
+
 
 *{
     padding: 0;
