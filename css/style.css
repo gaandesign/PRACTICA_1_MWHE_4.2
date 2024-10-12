@@ -12,12 +12,6 @@
     src: url(../fonts/KGHAPPYSolid.ttf) format('truetype');
 }
 
-@font-face {
-    font-family: 'Helvetica Neue';
-    font-weight: ;
-    src: url(../fonts/Helvetica_Neue/HelveticaNeueBlack.otf);                                           
-}
-
 
 *{
     padding: 0;
@@ -47,14 +41,14 @@
     margin-bottom: 0;
     padding: 1em;
 }
+
 #guia_tv h2 {
     color: var(--color-naranja);
-    font-family: 'Helvetica Neue';
+    font-family: 'Montserrat';
     font-weight: bold;
     padding-bottom: 1em;
     margin-bottom: 0;
 }
-
 
 #carouselGuiaTV .carousel-inner {
     display: flex;
@@ -72,7 +66,16 @@
 #carouselGuiaTV img {
     border-radius: 35px;
     object-fit: cover;
-    height: 200px;
+    height:auto;
+    width: 100%;
+    max-height: 200px;
+}
+
+
+.card {
+    width: 100%;
+    max-width: 18rem;
+    margin-bottom: 2em;
 }
 
 .card-img-wrapper {
