@@ -29,6 +29,43 @@
     background-color: var(--color-verde);
 }
 
+/* INTRODUCCION */
+#introduccion{
+    border-radius: 100px 100px 0 0;
+    position: relative;
+}
+
+#introduccion h1 {
+    padding: 1em;
+}
+
+.highlight {
+    background-color: var(--color-rosa);
+    border-radius: 25px;
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+.video-container {
+    margin-bottom: 2rem;
+}
+
+.ratio-16x9 {
+    border-radius: 35px;
+    overflow: hidden; 
+    border: 5px dashed var(--color-sazon);
+}
+
+.img-superpuesta {
+    position: absolute;
+    bottom: -120px;
+    left: -100px;
+    width: 30%; 
+    z-index: 10;
+    overflow: hidden;
+}
+
+
 /* GUIA TV */
 #guia_tv {
     background-color: black;
@@ -56,8 +93,6 @@
 #carouselGuiaTV2 .carousel-inner{
     display: flex;
 }
-
-
 
 #carouselGuiaTV .card {
     border: none;
