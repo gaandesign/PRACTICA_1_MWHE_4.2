@@ -7,6 +7,7 @@
     --color-rosa: #F097C1;
 }
 
+
 @font-face {
     font-family: "KGHAPPYSolid";
     src: url(../fonts/KGHAPPYSolid.ttf) format('truetype');
@@ -25,11 +26,12 @@
     font-family: 'Saira Semi Condensed', sans-serif; */
 }
 
-#recetas_noticias {
-    background-color: var(--color-verde);
+p, p > b {
+    font-family: "Montserrat", sans-serif;
 }
 
-/* INTRODUCCION */
+/* INTRODUCCION | VIDEO */
+
 #introduccion{
     border-radius: 100px 100px 0 0;
     position: relative;
@@ -65,13 +67,24 @@
     overflow: hidden;
 }
 
+/* INTRODUCCIÓN | NUESTRA HISTORIA */
+
+#nuestra_historia .btn {
+    padding: 0;
+    color: black;
+}
+
+#nuestra_historia h1 {
+    padding: 0;
+}
 
 /* GUIA TV */
+
 #guia_tv {
     background-color: black;
     border-radius: 100px 100px 0 0;
-    
 }
+
 #guia_tv h1 {
     color: var(--color-azul);
     text-transform: uppercase;
@@ -175,4 +188,10 @@
 
 .card:hover .overlay {
     opacity: 1;
+}
+
+/* RECETAS Y NOTICIAS  */
+
+#recetas_noticias {
+    background-color: var(--color-verde);
 }
