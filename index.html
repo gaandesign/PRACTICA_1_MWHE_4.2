@@ -42,13 +42,12 @@
     <header>
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Home</a>
 
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
 
             <ul class="navbar-nav">
               
@@ -58,11 +57,7 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#recetas_noticias">RECETAS</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="#recetas_noticias">NOTICIAS</a>
+                <a class="nav-link" href=".recetas">RECETAS</a>
               </li>
 
               <li class="nav-item">
@@ -70,7 +65,7 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#"><img src="media/favicon/logo.svg" alt="Sazón"></a>
+                <a class="nav-link" id="logo" href="#"><img src="media/favicon/logo.svg" alt="Sazón"></a>
               </li>
 
               <li class="nav-item">
@@ -78,7 +73,7 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#recetas_noticias">NOTICIAS</a>
+                <a class="nav-link" href=".noticias">NOTICIAS</a>
               </li>
 
               <li class="nav-item dropdown">
@@ -92,7 +87,7 @@
               </li>
               
               <li class="nav-item">
-                <a class="nav-link btn" href="#">VER TV</a>
+                <a class="nav-link" href="#"><button type="button" class="btn">VER TV</button></a>
               </li> 
 
             </ul>
@@ -127,7 +122,7 @@
             <div class="col-xl-3 col-md-6 col-s-1">
               <h1>NUESTRA HISTORIA</h1>
 
-              <img src="media/img/pollo.svg" alt="Pollo asado de Sazón">
+              <img src="media/img/POLLO_ASADO.svg" alt="Pollo asado de Sazón">
             </div>
 
             <div class="col-xl-3 col-md-6 col-s-1">
@@ -143,67 +138,65 @@
           </div>
 
         </div>
-      </div>
+      </section>
+
+    <section id="letrero">
 
     </section>
 
-        <section id="letrero">
+    <!-- GUIA TV -->
 
-        </section>
+    <section id="guia_tv" class="bg-dark">
+      <h1 class="text-center">GUÍA TV</h1>
+      <h2 class="text-center">LO MÁS ESPERADO ESTA SEMANA</h2>
 
-        <!-- GUIA TV -->
-
-        <section id="guia_tv" class="bg-dark">
-          <h1 class="text-center">GUÍA TV</h1>
-          <h2 class="text-center">LO MÁS ESPERADO ESTA SEMANA</h2>
-        </section>
-
-        <!-- Carousel -->
-    
-    <div id="carouselGuiaTV" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000"> 
-        <!-- Carousel 1 -->
-      <div class="carousel-inner bg-dark" >
-          <div class="carousel-item active">
-            <div class="container">
-              <div class="row justify-content-center">
-                  <!-- 1 -->
-                  <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
-                  <div class="card mx-2">
-                      <div class="card-img-wrapper">
-                        <img src="media/img/arginano.jpg" class="card-img-top" alt="Cocina abierta Karlos Arguiñano">
-                        <div class="overlay">
-                            <div class="text">
-                              <h5>Cocina abierta de Karlos Arguiñano</h5>
-                              <p>Disfruta de recetas sencillas y deliciosas en un ambiente cercano y divertido. Karlos Arguiñano te enseñará a preparar platos caseros y saludables, llenos de sabor, mientras comparte trucos y consejos útiles.</p>
-                            </div>
+          <!-- Carousel -->
+        
+        <div id="carouselGuiaTV" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000"> 
+          <!-- Carousel 1 -->
+        <div class="carousel-inner bg-dark" >
+            <div class="carousel-item active">
+              <div class="container">
+                <div class="row justify-content-center">
+                    <!-- 1 -->
+                    <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                    <div class="card mx-2">
+                        <div class="card-img-wrapper">
+                          <img src="media/img/arginano.jpg" class="card-img-top" alt="Cocina abierta Karlos Arguiñano">
+                          <div class="overlay">
+                              <div class="text">
+                                <h5>Cocina abierta de Karlos Arguiñano</h5>
+                                <p>Disfruta de recetas sencillas y deliciosas en un ambiente cercano y divertido. Karlos Arguiñano te enseñará a preparar platos caseros y saludables, llenos de sabor, mientras comparte trucos y consejos útiles.</p>
+                              </div>
+                          </div>
                         </div>
-                      </div>
-                      </div>
-                  </div>
-                  <!-- 2 -->
-                  <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
-                  <div class="card mx-2">
-                      <div class="card-img-wrapper">
-                      <img src="media/img/cake_boss.jpg" class="card-img-top" alt="Cake Boss">
-                      <div class="overlay">
-                        <div class="text">
-                          <h5>El Rey de las Tartas</h5>
-                                <p>Acompaña a Buddy Valastro y su talentoso equipo en su famosa pastelería Carlo’s Bakery, donde crean increíbles y elaborados pasteles para cualquier ocasión. Disfruta de la mezcla perfecta de arte y repostería, mientras Buddy comparte su pasión por la cocina.</p>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                    <div class="card mx-2">
+                        <div class="card-img-wrapper">
+                        <img src="media/img/cake_boss.jpg" class="card-img-top" alt="Cake Boss">
+                        <div class="overlay">
+                          <div class="text">
+                            <h5>El Rey de las Tartas</h5>
+                                  <p>Acompaña a Buddy Valastro y su talentoso equipo en su famosa pastelería Carlos' Bakery, donde crean increíbles y elaborados pasteles para cualquier ocasión. Disfruta de la mezcla perfecta de arte y repostería, mientras Buddy comparte su pasión por la cocina.</p>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                    
-                  </div>
-                  <!-- 3 -->
-                  <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
-                  <div class="card mx-2">
-                    <div class="card-img-wrapper">
-                      <img src="media/img/ratatouille.jpg" class="card-img-top" alt="...">
-                      <div class="overlay">
-                        <div class="text">
-                          <h5>Ratatouille</h5>
-                                <p>Esta película te lleva a París, donde un ratón llamado Remy sueña con convertirse en un gran chef. Acompáñalo en su aventura para superar obstáculos y seguir su pasión por la cocina, mientras forma una inesperada amistad con un joven cocinero.</p>
+                      
+                    </div>
+                    <!-- 3 -->
+                    <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                    <div class="card mx-2">
+                      <div class="card-img-wrapper">
+                        <img src="media/img/ratatouille.jpg" class="card-img-top" alt="...">
+                        <div class="overlay">
+                          <div class="text">
+                            <h5>Ratatouille</h5>
+                                  <p>Esta película te lleva a París, donde un ratón llamado Remy sueña con convertirse en un gran chef. Acompáñalo en su aventura para superar obstáculos y seguir su pasión por la cocina, mientras forma una inesperada amistad con un joven cocinero.</p>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -211,230 +204,221 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <div class="container">
-              <div class="row justify-content-center">
-                  <!-- 4 -->
-                  <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
-                  <div class="card mx-2">
-                    <div class="card-img-wrapper">
-                      <img src="media/img/mastechef.jpg" class="card-img-top" alt="...">
-                      <div class="overlay">
-                        <div class="text"><h5>MasterChef</h5>
-                          <p>Este programa reúne a aspirantes a chefs que compiten en desafiantes pruebas culinarias. Con la guía de chefs profesionales y críticos gastronómicos, los participantes demostrarán su creatividad y habilidades en la cocina mientras luchan por un lugar en la gran final.</p>
+            <div class="carousel-item">
+              <div class="container">
+                <div class="row justify-content-center">
+                    <!-- 4 -->
+                    <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                    <div class="card mx-2">
+                      <div class="card-img-wrapper">
+                        <img src="media/img/mastechef.jpg" class="card-img-top" alt="...">
+                        <div class="overlay">
+                          <div class="text"><h5>MasterChef</h5>
+                            <p>Este programa reúne a aspirantes a chefs que compiten en desafiantes pruebas culinarias. Con la guía de chefs profesionales y críticos gastronómicos, los participantes demostrarán su creatividad y habilidades en la cocina mientras luchan por un lugar en la gran final.</p>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                  </div>
+                    <!-- 5 -->
+                    <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                    <div class="card mx-2">
+                      <div class="card-img-wrapper">
+                        <img src="media/img/the_bear.jpg" class="card-img-top" alt="...">
+                        <div class="overlay">
+                          <div class="text">
+                            <h5>The Bear</h5>
+                                  <p>Esta serie sigue a un joven chef que regresa a Chicago para hacerse cargo del restaurante familiar después de la muerte de su hermano. <br> ¡No te pierdas esta emocionante experiencia culinaria!</p>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- 6 -->
+                    <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                    <div class="card mx-2">
+                      <div class="card-img-wrapper">
+                        <img src="media/img/cronicas_carnivoras.jpg" class="card-img-top" alt="...">
+                        <div class="overlay">
+                          <div class="text">
+                            <h5>Crónicas carnívoras</h5>
+                                  <p>El chef y amante de la carne, Santiago de León, explora el fascinante mundo de la gastronomía carnívora. Desde parrillas hasta asados, cada episodio presenta recetas, técnicas y secretos para preparar los cortes más exquisitos. </p>
+                          </div>
                         </div>
                       </div>
                       </div>
+                    </div> 
                     </div>
                 </div>
-                  <!-- 5 -->
-                  <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
-                  <div class="card mx-2">
-                    <div class="card-img-wrapper">
-                      <img src="media/img/the_bear.jpg" class="card-img-top" alt="...">
-                      <div class="overlay">
+            </div>     
+        </div>
+
+        <!-- Controles del carrusel -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselGuiaTV" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselGuiaTV" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- CARRUSEL ABAJO -->
+    <div id="carouselGuiaTV2" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000"> 
+    <!-- Carousel 1 -->
+    <div class="carousel-inner bg-dark" >
+      <div class="carousel-item active">
+        <div class="container">
+          <div class="row justify-content-center">
+              <!-- 1 -->
+              <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+              <div class="card mx-2">
+                  <div class="card-img-wrapper">
+                    <img src="media/img/micasa_eslatuya.jpg" class="card-img-top" alt="Programa 1">
+                    <div class="overlay">
                         <div class="text">
-                          <h5>The Bear</h5>
-                                <p>Esta serie sigue a un joven chef que regresa a Chicago para hacerse cargo del restaurante familiar después de la muerte de su hermano. <br> ¡No te pierdas esta emocionante experiencia culinaria!</p>
+                          <h5>Mi casa es la tuya</h5>
+                          <p>Acercamos a los espectadores el lado más desconocido de personajes relevantes para la sociedad española; o bien acuden a casa del presentador o abren las puertas de su vivienda para tratar temas de gran interés.</p>
                         </div>
-                      </div>
-                      </div>
                     </div>
                   </div>
-                  <!-- 6 -->
-                  <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
-                  <div class="card mx-2">
-                    <div class="card-img-wrapper">
-                      <img src="media/img/cronicas_carnivoras.jpg" class="card-img-top" alt="...">
-                      <div class="overlay">
-                        <div class="text">
-                          <h5>Crónicas carnívoras</h5>
-                                <p>El chef y amante de la carne, Santiago de León, explora el fascinante mundo de la gastronomía carnívora. Desde parrillas hasta asados, cada episodio presenta recetas, técnicas y secretos para preparar los cortes más exquisitos. </p>
-                        </div>
-                      </div>
-                    </div>
-                    </div>
-                  </div> 
                   </div>
               </div>
-          </div>     
+              <!-- 2 -->
+              <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+              <div class="card mx-2">
+                  <div class="card-img-wrapper">
+                  <img src="media/img/telmo_tula.jpg" class="card-img-top" alt="Programa 2">
+                  <div class="overlay">
+                    <div class="text">
+                      <h5>Telmo y Tula: pequeños cocineros </h5>
+                            <p>Telmo y Tula son unos simpáticos hermanos que enseñan a los niños a hacer manualidades y a cocinar recetas sencillas. Los hermanos siempre estarán acompañados por Paquito, un gracioso ratón que es su mascota.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                
+              </div>
+              <!-- 3 -->
+              <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+              <div class="card mx-2">
+                <div class="card-img-wrapper">
+                  <img src="media/img/elmenu.jpg" class="card-img-top" alt="Programa 3">
+                  <div class="overlay">
+                    <div class="text">
+                      <h5>El Menú</h5>
+                            <p>Margot y Tyler, una pareja joven, viajan a una isla remota para comer en un restaurante exclusivo donde un chef misterioso les prepara un menú costoso y opulento. Sin embargo, pronto queda claro que a los comensales les esperan algunas sorpresas.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+      <div class="carousel-item">
+        <div class="container">
+          <div class="row justify-content-center">
+              <!-- 4 -->
+              <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+              <div class="card mx-2">
+                <div class="card-img-wrapper">
+                  <img src="media/img/lluvia_albondigas.jpg" class="card-img-top" alt="Programa 4">
+                  <div class="overlay">
+                    <div class="text"><h5>Lluvia de Albondigas</h5>
+                      <p>Cuando la ciudad de Swallow Falls vive momentos difíciles, su población sólo puede comer sardinas. Flint Lockwood, un inventor fracasado, cree que él tiene la respuesta para la crisis de la ciudad.</p>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+            </div>
+              <!-- 5 -->
+              <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+              <div class="card mx-2">
+                <div class="card-img-wrapper">
+                  <img src="media/img/afuego_lento.jpg" class="card-img-top" alt="Programa 5">
+                  <div class="overlay">
+                    <div class="text">
+                      <h5>A fuego lento</h5>
+                            <p>La cocinera Eugénie ha trabajado para el famoso gourmet Dodin durante los últimos 20 años. Cada vez más enamorados el uno del otro, su vínculo se convierte en un romance y da lugar a deliciosos platos que impresionan a los mejores chefs del mundo.</p>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 6 -->
+              <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+              <div class="card mx-2">
+                <div class="card-img-wrapper">
+                  <img src="media/img/niquelao.jpg" class="card-img-top" alt="Programa 6">
+                  <div class="overlay">
+                    <div class="text">
+                      <h5>Niquelao!</h5>
+                            <p>La Terremoto de Alcorcón presenta la versión española de "Nailed it!", concurso en el que resposteros amateurs intentan replicar dulces de alta exigencia técnica.</p>
+                    </div>
+                  </div>
+                </div>
+                </div>
+              </div> 
+              </div>
+          </div>
+      </div>     
+    </div>
 
       <!-- Controles del carrusel -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselGuiaTV" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselGuiaTV2" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselGuiaTV" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselGuiaTV2" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
       </button>
-  </div>
+      </div>
+    </section>
 
-  <!-- CARRUSEL ABAJO -->
-<div id="carouselGuiaTV2" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000"> 
-  <!-- Carousel 1 -->
-<div class="carousel-inner bg-dark" >
-    <div class="carousel-item active">
-      <div class="container">
-        <div class="row justify-content-center">
-            <!-- 1 -->
-            <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
-            <div class="card mx-2">
-                <div class="card-img-wrapper">
-                  <img src="media/img/micasa_eslatuya.jpg" class="card-img-top" alt="Programa 1">
-                  <div class="overlay">
-                      <div class="text">
-                        <h5>Mi casa es la tuya</h5>
-                        <p>Acercamos a los espectadores el lado más desconocido de personajes relevantes para la sociedad española; o bien acuden a casa del presentador o abren las puertas de su vivienda para tratar temas de gran interés.</p>
-                      </div>
-                  </div>
-                </div>
-                </div>
-            </div>
-            <!-- 2 -->
-            <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
-            <div class="card mx-2">
-                <div class="card-img-wrapper">
-                <img src="media/img/telmo_tula.jpg" class="card-img-top" alt="Programa 2">
-                <div class="overlay">
-                  <div class="text">
-                    <h5>Telmo y Tula: pequeños cocineros </h5>
-                          <p>Telmo y Tula son unos simpáticos hermanos que enseñan a los niños a hacer manualidades y a cocinar recetas sencillas. Los hermanos siempre estarán acompañados por Paquito, un gracioso ratón que es su mascota.</p>
-                  </div>
-                </div>
+
+    <section id="recetas_noticias">
+      <div>
+        <h1 class="text-center">SABEMOS QUE TIENES</h1>
+        <h2 class="text-center">HAMBRE DE MÁS...</h2>
+        
+        <div class="pr-cont container py-4">
+          <div class="row">
+
+            <div class="col-12 row recetas">
+              <div class="col-6">
+                <h3>RECETAS CON SABOR</h3>
+                <button type="button" class="btn btn-primary">VER</button>
+              </div>
+              
+              <div class="col-6">
+                <img src="media/img/RECETAS_CON_SABOR.jpg" alt="Recetas con sabor">
               </div>
             </div>
+
+            <div class="col-12 row noticias">
+              <div class="col-6">
+                <img src="media/img/NOTICIAS_CON_SALSEO.jpg" alt="Noticias con salseo">
+              </div>
+
+              <div class="col-6">
+                <h3>RECETAS CON SABOR</h3>
+                <button type="button" class="btn btn-primary">VER</button>
+              </div>
+              
               
             </div>
-            <!-- 3 -->
-            <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
-            <div class="card mx-2">
-              <div class="card-img-wrapper">
-                <img src="media/img/elmenu.jpg" class="card-img-top" alt="Programa 3">
-                <div class="overlay">
-                  <div class="text">
-                    <h5>El Menú</h5>
-                          <p>Margot y Tyler, una pareja joven, viajan a una isla remota para comer en un restaurante exclusivo donde un chef misterioso les prepara un menú costoso y opulento. Sin embargo, pronto queda claro que a los comensales les esperan algunas sorpresas.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+            
           </div>
+
         </div>
+       
       </div>
-    </div>
-    <div class="carousel-item">
-      <div class="container">
-        <div class="row justify-content-center">
-            <!-- 4 -->
-            <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
-            <div class="card mx-2">
-              <div class="card-img-wrapper">
-                <img src="media/img/lluvia_albondigas.jpg" class="card-img-top" alt="Programa 4">
-                <div class="overlay">
-                  <div class="text"><h5>Lluvia de Albondigas</h5>
-                    <p>Cuando la ciudad de Swallow Falls vive momentos difíciles, su población sólo puede comer sardinas. Flint Lockwood, un inventor fracasado, cree que él tiene la respuesta para la crisis de la ciudad.</p>
-                  </div>
-                </div>
-                </div>
-              </div>
-          </div>
-            <!-- 5 -->
-            <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
-            <div class="card mx-2">
-              <div class="card-img-wrapper">
-                <img src="media/img/afuego_lento.jpg" class="card-img-top" alt="Programa 5">
-                <div class="overlay">
-                  <div class="text">
-                    <h5>A fuego lento</h5>
-                          <p>La cocinera Eugénie ha trabajado para el famoso gourmet Dodin durante los últimos 20 años. Cada vez más enamorados el uno del otro, su vínculo se convierte en un romance y da lugar a deliciosos platos que impresionan a los mejores chefs del mundo.</p>
-                  </div>
-                </div>
-                </div>
-              </div>
-            </div>
-            <!-- 6 -->
-            <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
-            <div class="card mx-2">
-              <div class="card-img-wrapper">
-                <img src="media/img/niquelao.jpg" class="card-img-top" alt="Programa 6">
-                <div class="overlay">
-                  <div class="text">
-                    <h5>Niquelao!</h5>
-                          <p>La Terremoto de Alcorcón presenta la versión española de "Nailed it!", concurso en el que resposteros amateurs intentan replicar dulces de alta exigencia técnica.</p>
-                  </div>
-                </div>
-              </div>
-              </div>
-            </div> 
-            </div>
-        </div>
-    </div>     
-</div>
-
-<!-- Controles del carrusel -->
-<button class="carousel-control-prev" type="button" data-bs-target="#carouselGuiaTV2" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-</button>
-<button class="carousel-control-next" type="button" data-bs-target="#carouselGuiaTV2" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-</button>
-</div>
-
-
-
-        <section id="recetas_noticias">
-            <h1 class="text-center">Sabemos que tienes</h1>
-            <h2 class="text-center">hambre de más...</h2>
-          
-            
-            <div class="card mb-3">
-
-              <div class="row g-0">
-
-                <div class="col-md-4">
-                  <img src="https://picsum.photos/1000/750" class="img-fluid rounded-start" alt="Lorem Picsum">
-                </div>
-
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h3 class="card-title text-center">RECETAS CON SABOR</h3>
-                  </div>
-
-                  <div class="my-card-button">
-                    <button type="button" class="btn">Descubrir</button>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-
-            <div class="card mb-3">
-
-              <div class="row g-0">
-
-                <div class="col-md-4">
-                  <img src="https://picsum.photos/1000/750" class="img-fluid rounded-start" alt="Lorem Picsum">
-                </div>
-
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h3 class="card-title text-center">NOTICIAS CON SALSEO</h3>
-                  </div>
-
-                  <div class="my-card-button">
-                    <button type="button" class="btn">Descubrir</button>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-            
-        </section>
+        
+        
+    </section>
 
         <section id="premium">
 
@@ -455,8 +439,8 @@
     </footer>
 
     <!-- SCRIPT DE BOOTSTRAP -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js
-    "></script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> 
+
     <!-- SCRIPT -->
     <script src="js/script.js"></script>
 </body>
