@@ -52,7 +52,7 @@ h3 {
     color: black;
     border: black 0.3rem solid;
     border-radius: 32px;
-    padding: 1rem 6rem;
+    padding: 1rem 3rem;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
     font-size: 2rem;
@@ -276,4 +276,48 @@ footer {
 footer p {
     font-family: "Montserrat", sans-serif;
     font-size: 1.5rem;
+}
+
+/* TIENDA.HTML */
+
+#titulo > h1 {
+    color: var(--color-marino);
+}
+
+figure, img {
+    width: 100%;
+}
+
+#merchandasing .btn-primary, #menaje .btn-primary, #libros .btn-primary {
+    border: 0;
+    background-color: var(--color-azul);
+}
+
+#merchandasing h4, #menaje h4, #libros h4 {
+    color: white;
+}
+
+                /* NO ME FUNCIONA NO SE POR QUÉ
+
+                #titulo > hr, #menaje > hr, #libros > hr {
+                    color: white;
+                    border-style: dashed;
+                } */
+
+/* MERCHANDASING */
+
+#merchandasing {
+    background-color: var(--color-rosa);
+}
+
+/* MENAJE */
+
+#menaje {
+    background-color: var(--color-naranja);
+}
+
+/* LIBROS */
+
+#libros {
+    background-color: var(--color-marino);
 }
