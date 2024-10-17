@@ -24,6 +24,7 @@
     /* background-color: #F5F5F5; */
 }
 
+
 p, p > b {
     font-family: "Montserrat", sans-serif;
 }
@@ -114,28 +115,6 @@ header {
 
 /* MARQUEE */
 
-/* .marquee {
-    width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-    box-sizing: border-box;
-    background-color: #FFCA42;
-    align-items: center;
-    padding: 2rem;
-  }
-  
-  .marquee p {
-    display: inline-block;
-    padding-left: 100%;
-    animation: scroll-text 10s linear infinite;
-    white-space: nowrap;
-    margin: 0;
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-    align-items: center;
-    font-size: 2rem;
-  } */
-
   .marquee {
     width: 100%;
     display: flex;
@@ -149,7 +128,7 @@ header {
   .marquee-content {
     display: flex;
     min-width: 200%; 
-    animation: scroll-text 10s linear infinite;
+    animation: scroll-text 20s linear infinite;
 }
   .marquee-content p {
     white-space: nowrap;
@@ -297,6 +276,49 @@ header {
     background-color: var(--color-sazon);
 }
 
+/* SECCION PREMIUM */
+#premium {
+    background-color: rgb(255, 255, 255);
+    border-radius: 100px 100px 0 0;
+    overflow: hidden;
+    padding: 0rem 0 20rem;
+    text-align: center;
+}
+
+#premium h1 {
+    line-height: 0.8;
+}
+
+.smaller-text {
+    font-size: 0.5em;
+    display: block;
+    margin-bottom: 0;
+}
+
+.svg-container {
+    position: relative; 
+    width: 100%;
+    max-width: 800px;
+    margin: 2rem auto;
+}
+
+#upper-svg {
+    position: relative; 
+    z-index: 1; 
+    width: 50%;
+}
+
+#rotating-svg {
+    position: absolute; 
+    width: 125%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+.description-text {
+   
+}
 /* MENU FINAL */
 
 #menu_final {
