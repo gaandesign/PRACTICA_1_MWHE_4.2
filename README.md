@@ -1,7 +1,9 @@
 # PRACTICA_1_MWHE_4.2
- Marina Garrido y Sara Gonzalez
+ Marina Garrido y Sara González
 
 
- @Sara - 14/10
+COSAS TERMINADAS AL 100%:
 
- he puesto en comentarios la ilustracion de la mano para q no me molestara ahora mientras trabajaba, no la he borrado
+- Menu superior
+- Marquee
+- Footer final
