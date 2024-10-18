@@ -24,6 +24,9 @@
     /* background-color: #F5F5F5; */
 }
 
+section {
+    padding: 3rem 0;
+}
 
 p, p > b {
     font-family: "Montserrat", sans-serif;
@@ -59,10 +62,63 @@ h3 {
     font-size: 2rem;
 }
 
-/* MENÚ */
+/* MENÚ SUPERIOR */
+
+#menu_superior {
+    color: white;
+    background-color: black;
+    font-size: 2rem;
+}
+
+.redes_sociales, .on-live {
+    padding: 0 2rem;
+}
+
+.redes_sociales > ul {
+    list-style: none;
+}
+
+.redes_sociales li {
+    padding: 0 2rem;
+}
+
+.redes_sociales i {
+    color: white;
+}
+
+.on-live h5 {
+    margin: 0;
+}
+
+.circulo-on-live {
+    width: 2rem;                
+    height: 2rem;   
+    margin: 0 1rem;
+    background-color: var(--color-sazon);    
+    border-radius: 50%;         
+    animation: blink 1s infinite; 
+}
+  
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;  
+    }
+
+    50% {
+        opacity: 0;  
+    }
+}
+
+/* MENÚ PRINCIPAL */
 
 header {
-    font-family: "KGHAPPYSolid";
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    color: black;
+}
+
+.bg-body-tertiary {
+    background-color: white !important;
 }
 
 #logo > img {
@@ -115,7 +171,11 @@ header {
 
 /* MARQUEE */
 
-  .marquee {
+#letrero {
+    padding: 0;
+}
+
+.marquee {
     width: 100%;
     display: flex;
     align-items: center;
@@ -124,13 +184,15 @@ header {
     box-sizing: border-box;
     background-color: #FFCA42;
     padding: 2rem;
-  }
-  .marquee-content {
+}
+
+.marquee-content {
     display: flex;
     min-width: 200%; 
     animation: scroll-text 20s linear infinite;
 }
-  .marquee-content p {
+
+.marquee-content p {
     white-space: nowrap;
     margin: 0;
     padding: 0 2rem; 
@@ -139,16 +201,16 @@ header {
     align-items: center;
     font-size: 2rem;
     padding-right: 0%;
-  }
+}
   
-  @keyframes scroll-text {
+@keyframes scroll-text {
     0% {
-      transform: translateX(0%);
+        transform: translateX(0%);
     }
     100% {
-      transform: translateX(-100%);
+        transform: translateX(-100%);
     }
-  }
+}
 
 /* GUIA TV */
 
@@ -171,6 +233,7 @@ header {
 #carouselGuiaTV .carousel-inner{
     display: flex;
 }
+
 #carouselGuiaTV2 .carousel-inner{
     display: flex;
 }
@@ -182,6 +245,7 @@ header {
     overflow: hidden; 
     margin-bottom: 2em;
 }
+
 #carouselGuiaTV2 .card {
     border: none;
     background-color: transparent;
@@ -197,6 +261,7 @@ header {
     width: 100%;
     max-height: 200px;
 }
+
 #carouselGuiaTV2 img {
     border-radius: 35px;
     object-fit: cover;
@@ -255,6 +320,11 @@ header {
 
 .card:hover .overlay {
     opacity: 1;
+}
+
+.btn-tv {
+    background-color: var(--color-azul);
+    border: none;
 }
 
 /* RECETAS Y NOTICIAS  */
@@ -316,9 +386,9 @@ header {
     z-index: 0;
 }
 
-.description-text {
+/* .description-text {
    
-}
+} */
 /* MENU FINAL */
 
 #menu_final {
