@@ -377,6 +377,7 @@ header hr {
 }
 
 /* SECCION PREMIUM */
+
 #premium {
     background-color: rgb(255, 255, 255);
     border-radius: 100px 100px 0 0;
@@ -419,6 +420,22 @@ header hr {
 /* .description-text {
    
 } */
+
+/* TIENDA */
+
+#tienda {
+    background-color: var(--color-marino);
+    border-radius: 100px 100px 0 0;
+}
+
+#tienda h1 {
+    color: var(--color-azul);
+}
+
+#tienda img {
+    border: 5px dashed var(--color-rosa);
+}
+
 /* MENU FINAL */
 
 #menu_final {
