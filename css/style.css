@@ -28,6 +28,10 @@ section {
     padding: 3rem 0;
 }
 
+/* .container {
+    margin: 0 10%;
+} */
+
 p, p > b {
     font-family: "Montserrat", sans-serif;
 }
@@ -50,6 +54,13 @@ h3 {
     font-size: 6rem;
     color: white;
     padding-bottom: 2rem;
+}
+
+.smaller-text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    padding: 2rem 0;
 }
 
 .btn-primary {
@@ -131,18 +142,23 @@ nav:nth-child(2) li {
     padding: 0 1rem;
 }
 
+.espacio {
+    margin: 5%;
+}
+
 .nav-logo {
-    position: absolute;
-    top: 55%;
-    left: 45%;
-    right: 0;
-    bottom: 0;
+    position: relative;
+    width: 200px;
 }
 
 #logo {
     display: flex;
     justify-content: center;
-    width: 10%;
+    position: absolute;
+    width: 120px;
+    margin: 0 50px;
+    top: 0;
+    left: 0;
 }
 
     /* NO ME FUNCIONA NO SE POR QUÉ */
@@ -159,6 +175,7 @@ nav:nth-child(2) .btn-primary {
 header hr {
     margin: 0 5%;
 }
+
 
 
 /* INTRODUCCION | VIDEO */
@@ -249,8 +266,32 @@ header hr {
 }
 
 /* GUIA TV */
+.guia_tv {
+    background-color: var(--color-sazon);
+}
+/* #guia_tv::after,
+#guia_tv::before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: #FFCA42;
+    position: absolute;
+}
+
+#guia_tv::after {
+    top: 0;
+    left: 0;
+}
+
+#guia_tv::before {
+    top: 0;
+    right: 0;
+} */
 
 #guia_tv {
+    z-index: 1;
+    position: relative;
     background-color: black;
     border-radius: 100px 100px 0 0;
 }
@@ -261,7 +302,7 @@ header hr {
     margin-bottom: 0;
 }
 
-#guia_tv h2 {
+#guia_tv .smaller-text {
     color: var(--color-naranja);
     margin-bottom: 0;
 }
@@ -384,6 +425,10 @@ header hr {
 
 /* SECCION PREMIUM */
 
+.premium {
+    background-color: var(--color-verde);
+}
+
 #premium {
     background-color: rgb(255, 255, 255);
     border-radius: 100px 100px 0 0;
@@ -428,6 +473,10 @@ header hr {
 } */
 
 /* TIENDA */
+
+.tienda {
+    background-color: white;
+}
 
 #tienda {
     background-color: var(--color-marino);
