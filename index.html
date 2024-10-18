@@ -38,6 +38,15 @@
     
 </head>
 
+<!-- Pop-up de cookies -->
+<div id="cookie-popup">
+  <div>
+      <h2>🍪 AVISO DE COOKIES 🍪</h2>
+      <p>Estas cookies no se comen, pero quédate y ¡verás recetas que sí!</p>
+      <div id="accept-cookies"><button type="button" class="btn btn-primary"><p>ACEPTAR</p></button></div>
+  </div>    
+</div>
+
 <body>
     <header>
       <nav class="navbar d-none d-lg-flex" id="menu_superior">
@@ -164,7 +173,7 @@
             <img src="media/img/mano.png" class="img-superpuesta" alt="mano">
         </div>
 
-        <div class="pr-cont container py-4" id="nuestra_historia">
+        <div class="pr-cont container-fluid py-4" id="nuestra_historia">
           <div class="row justify-content-center">
 
             <div class="col-xl-3 col-md-6 col-s-1">
@@ -450,7 +459,7 @@
           <h1 class="text-center display-1">SABEMOS QUE TIENES<span class="smaller-text">HAMBRE DE MÁS...</span></h1>
 
           
-          <div class="pr-cont container py-4">
+          <div class="pr-cont container-fluid py-4">
             <div class="row">
 
               <div class="col-12 row recetas">
@@ -525,9 +534,9 @@
      
   <div class="tienda">
     <section id="tienda">
-      <h1 class="text-center">TIENDA</h1>
+      <h1 class="text-center display-1">TIENDA</h1>
 
-      <div class="container">
+      <div class="container-fluid">
 
         <div class="row">
 
@@ -574,14 +583,14 @@
             </div>
             
             <div class="col-12">
-              <h3>¡Deja el microondas <br>y únete a los fogones!</h3>
+              <h1 class="display-1">¡Deja el microondas <br>y únete a los fogones!</h1>
               <hr>
           </div>
         
         </div>
         
         <div id="secciones_menu">
-          <ul>
+          <ul class="d-flex justify-content-center">
             <li>
               <a class="nav-link" href="#guia_tv">GUÍA TV</a>
             </li>
@@ -615,7 +624,11 @@
       </section>
 
       <section id="patrocinadores">
-
+        <div class="marquee">
+          <div class="marquee-content">
+           <img src="media/img/.jpg">
+          </div>
+        </div>      
       </section>
 
     </main>

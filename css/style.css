@@ -73,6 +73,63 @@ h3 {
     font-size: 2rem;
 }
 
+/* POP UP */
+
+#cookie-popup {
+	display: none;
+}
+
+#cookie-popup h2 {
+    padding: 0;
+}
+
+#cookie-popup > div {
+	z-index: 999;
+    position: fixed;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--color-sazon);
+    border-radius: 32px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;    
+	align-items: center;   
+    width: 60%;
+}
+
+#cookie-popup p {
+    font-size: 2rem;
+	color: black;
+	padding: 2%;
+}
+
+#accept-cookies > .btn-primary {
+    background-color: var(--color-azul);
+    color: white;
+    padding: 10px 20px;
+    border: black 0.2rem solid;
+    border-radius: 32px;
+    cursor: pointer;
+	display: flex;
+	justify-content: center;
+}
+
+#accept-cookies > .btn-primary:hover {
+	background-color: #2c7f96;
+}
+
+#accept-cookies > .btn-primary:hover p {
+	color: white;
+}
+
+#accept-cookies > .btn-primary > p {
+	color: black;
+    margin: 0;
+}
+
 
 /* MENÚ SUPERIOR */
 
@@ -166,7 +223,7 @@ nav:nth-child(2) li {
                     font-weight: 500;
                 } */
 
-nav:nth-child(2) .btn-primary {
+nav:nth-child(2) .btn-primary, #menu_final .btn-primary {
     background-color: var(--color-azul);
     border-radius: 4rem;
     padding: 0.5rem 2rem;
@@ -220,6 +277,10 @@ header hr {
 
 #nuestra_historia h1 {
     padding: 0;
+}
+
+#nuestra_historia p, #nuestra_historia .btn {
+    font-size: 1.5rem;
 }
 
 /* MARQUEE */
@@ -506,10 +567,21 @@ header hr {
     width: 10rem;
 }
 
-#menu_final h3 {
-    color: black;
-    font-size: 4rem;
-    padding-bottom: 10%;
+#secciones_menu ul {
+    list-style: none;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+#secciones_menu ul li:not(:last-child)::after {
+    content: "|";
+    margin: 0 10px; /* Espacio entre la barra y los elementos */
+}
+
+#menu_final .btn-primary {
+    position: absolute;
+    left: 45%;
+    font-size: 1.5rem;
 }
 
 hr {
@@ -517,6 +589,12 @@ hr {
     background: black;
     opacity: 100;
 }
+
+/* PATROCINADORES */
+#patrocinadores {
+    background-color: #FFEABB;
+}
+
 
 /* FOOTER */
 
