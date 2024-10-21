@@ -624,12 +624,19 @@ ul {
 }
 
 .logo {
+    position: absolute;
+    bottom: 75%;
+    left: 0;
     display: flex;
     justify-content: center;
 }
 
 #menu_final figure {
     width: 10rem;
+}
+
+#menu_final h1 {
+    margin: 7rem 0 0 0;
 }
 
 #menu_final .btn-primary {
@@ -639,12 +646,12 @@ ul {
 }
 
 #menu_final hr {
-    margin: 5rem 0;
+    margin: 4rem 0;
 }
 
 
 #secciones_menu {
-    margin: 0 0 5rem 0;
+    margin: 0 0 2rem 0;
 }
 
 #secciones_menu ul {
@@ -664,6 +671,14 @@ ul {
     background-color: #FFEABB;
 }
 
+#patrocinadores .marquee {
+    background-color: #FFEABB;
+}
+
+.logos_patrocinadores img {
+    width: 10%;
+    padding: 0 4rem;
+}
 
 /* FOOTER */
 

@@ -1,5 +1,9 @@
 // console.log("online");
 
+AOS.init({
+    duration: 1200,
+    // once: true,
+});
 
 const rotatingSvg = document.getElementById('rotating-svg');
 
