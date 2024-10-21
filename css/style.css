@@ -288,8 +288,16 @@ header hr {
     padding: 0;
 }
 
+#nuestra_historia h2 {
+    font-weight: 700;
+}
+
 #nuestra_historia p, #nuestra_historia .btn {
     font-size: 1.5rem;
+}
+
+#nuestra_historia img {
+    width: 80%;
 }
 
 /* MARQUEE */
@@ -606,6 +614,10 @@ ul {
     color: var(--color-azul);
 }
 
+#tienda > .container-fluid {
+    margin: 3rem 0;
+}
+
 .secciones_tienda {
     width: 40%;
     padding: 2rem;
@@ -615,6 +627,7 @@ ul {
 
 #tienda img {
     border: 10px dashed var(--color-sazon);
+    margin: 4rem 0;
 }
 
 /* MENU FINAL */

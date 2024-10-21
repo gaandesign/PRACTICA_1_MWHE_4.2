@@ -1,16 +1,31 @@
 // console.log("online");
 
+// LIBRERIA AOS
+
 AOS.init({
     duration: 1200,
     // once: true,
 });
 
+// GIRO ESTRELLA
 const rotatingSvg = document.getElementById('rotating-svg');
 
 window.addEventListener('scroll', () => {
     const scrollY = window.scrollY;
     const rotation = scrollY * 0.5; // Cambia el 0.5 para ajustar la velocidad de rotación
     rotatingSvg.style.transform = `translateX(-50%) rotate(${rotation}deg)`;
+});
+
+// MÁS/MENOS TEXTO DE NUESTRA HISTORIA
+const toggleButton = document.getElementById('toggleButton');
+const collapseElement = document.getElementById('masTexto');
+
+collapseElement.addEventListener('show.bs.collapse', () => {
+    toggleButton.innerText = 'Leer menos';
+});
+
+collapseElement.addEventListener('hide.bs.collapse', () => {
+    toggleButton.innerText = 'Leer más';
 });
 
 
