@@ -489,9 +489,6 @@ header hr {
     border-radius: 100px 100px 0 0;
 }
 
-#recetas_noticias img {
-    width: 100%;
-}
 
 .recetas, .noticias {
     padding-bottom: 6rem;
@@ -500,6 +497,15 @@ header hr {
 #recetas_noticias .btn-primary, #tienda .btn-primary {
     background-color: var(--color-sazon);
 }
+
+#recetas_noticias > div > div {
+    padding: 0 8rem;
+}
+
+#recetas_noticias figure {
+    padding: 0 3rem;
+}
+
 
 /* SECCION PREMIUM */
 
@@ -588,7 +594,6 @@ ul {
     border-radius: 35px;       
     text-transform: uppercase;
     transition: background-color 0.3s ease;
-    text-decoration: underline;
 }
 
 .custom-btn:hover {
@@ -752,6 +757,40 @@ figure, img {
 
 /* MEDIA QUERY */
 
+/* Escritorio (pequeño) */
+@media (min-width: 1201px) and (max-width: 1600px) {
+    body {
+        font-size: 18px;
+    }
+    .text-container {
+        flex-direction: column; 
+        padding: 0 25rem; 
+        justify-content: center; 
+        align-items: center; 
+        text-align: center;
+    }
+
+    .divider {
+        display: none;
+    }
+
+    .col-5 {
+        width: 100%; 
+    }
+
+    ul {
+        padding-left: 0;
+    }
+
+    li {
+        font-size: 18px;
+    }
+
+    .custom-btn {
+        margin: 0 auto;
+    }
+}
+
 /* Esto es una prueba para la seccion PREMIUM, para que sea el texto responsive y desaparezca la línea negra en pantallas pequeñas */
 
 /* @media (max-width: 768px) {
@@ -818,10 +857,10 @@ figure, img {
     }
 }
 
-/* Móviles (grandes) */
-@media (min-width: 481px) and (max-width: 768px) {
+/* Tablet en modo paisaje */
+@media (min-width: 900px) and (max-width: 1200px) {
     body {
-        font-size: 15px; 
+        font-size: 16px;
     }
     .text-container {
         flex-direction: column; 
@@ -851,6 +890,7 @@ figure, img {
         margin: 0 auto;
     }
 }
+
 
 /* Tablet en modo retrato */
 @media (min-width: 600px) and (max-width: 900px) {
@@ -886,10 +926,10 @@ figure, img {
     }
 }
 
-/* Tablet en modo paisaje */
-@media (min-width: 900px) and (max-width: 1200px) {
+/* Móviles (grandes) */
+@media (min-width: 481px) and (max-width: 768px) {
     body {
-        font-size: 16px;
+        font-size: 15px; 
     }
     .text-container {
         flex-direction: column; 
@@ -920,36 +960,5 @@ figure, img {
     }
 }
 
-/* Escritorio (pequeño) */
-@media (min-width: 1201px) and (max-width: 1600px) {
-    body {
-        font-size: 18px;
-    }
-    .text-container {
-        flex-direction: column; 
-        padding: 0 25rem; 
-        justify-content: center; 
-        align-items: center; 
-        text-align: center;
-    }
 
-    .divider {
-        display: none;
-    }
 
-    .col-5 {
-        width: 100%; 
-    }
-
-    ul {
-        padding-left: 0;
-    }
-
-    li {
-        font-size: 18px;
-    }
-
-    .custom-btn {
-        margin: 0 auto;
-    }
-}
