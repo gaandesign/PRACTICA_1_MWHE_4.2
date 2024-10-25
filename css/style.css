@@ -144,6 +144,7 @@ hr {
     color: white;
     background-color: black;
     font-size: 2rem;
+    flex-wrap: wrap;
 }
 
 .redes_sociales, .on-live {
@@ -153,11 +154,13 @@ hr {
 .redes_sociales > ul {
     list-style: none;
     text-decoration: none;
+    
 }
 
 .redes_sociales li {
     padding: 0 2rem;
     text-decoration: none;
+    flex: 1 1 auto;
 }
 
 .redes_sociales i {
@@ -642,7 +645,6 @@ ul {
 }
 
 #menu_final .btn-primary {
-    position: absolute;
     left: 45%;
     font-size: 1.5rem;
 }
@@ -699,6 +701,8 @@ footer p {
 
 #titulo > h1 {
     color: var(--color-marino);
+    font-size: 8rem;
+    margin-top: 2rem;
 }
 
 figure, img {
@@ -712,7 +716,31 @@ figure, img {
 
 #merchandasing h4, #menaje h4, #libros h4 {
     color: white;
+    font-size: 3rem;
 }
+.col-12.titulo > hr {
+    border: none !important;
+    border-top: 0.3rem dashed white !important;
+    width: 50% !important; 
+
+}
+
+#merchandasing, #menaje, #libros {
+    padding: 8rem 0;
+}
+
+.btn-primary {
+    width: 100%; 
+    margin-top: 1rem;
+}
+/* .hr-titulo-unico {
+   
+    border: 1px solid white !important; 
+    width: 50% !important; 
+    margin: 20px auto !important; 
+    position: relative;
+    z-index: 10; 
+} */
 
                 /* NO ME FUNCIONA NO SE POR QUÉ
 
@@ -725,224 +753,147 @@ figure, img {
 
 #merchandasing {
     background-color: var(--color-rosa);
+    border-radius: 100px 100px 0 0;
 }
 
 /* MENAJE */
 
 #menaje {
     background-color: var(--color-naranja);
+    border-radius: 100px 100px 0 0;
 }
 
 /* LIBROS */
 
 #libros {
     background-color: var(--color-marino);
+    border-radius: 100px 100px 0 0;
 }
 
-/* MEDIA QUERY */
+/* MEDIA QUERIES */
 
-/* Escritorio (pequeño) */
-@media (min-width: 1201px) and (max-width: 1600px) {
-    body {
-        font-size: 18px;
-    }
-    .text-container {
-        flex-direction: column; 
-        padding: 0 25rem; 
-        justify-content: center; 
-        align-items: center; 
-        text-align: center;
+/* TABLET  - BREAKPOINT */
+/* TIENDA */
+@media screen and (max-width: 800px){
+    #titulo h1 {
+        font-size: 40px;
+        padding: 0;
+        margin: 0;
     }
 
-    .divider {
-        display: none;
+    #merchandasing, #menaje, #libros{
+        padding: 2.5em 2em;
     }
 
-    .col-5 {
-        width: 100%; 
+
+    #merchandasing h4 {
+        font-size: 20px; 
+        margin-bottom: 10px; 
+    }
+    #menaje h4 {
+        font-size: 20px; 
+        margin-bottom: 10px; 
+    }
+    #libros h4 {
+        font-size: 20px;
+        margin-bottom: 10px;
     }
 
-    ul {
-        padding-left: 0;
+    .productos {
+        display: flex; 
+        flex-wrap: wrap; 
+        justify-content: center;
     }
 
-    li {
-        font-size: 18px;
+    .productos .col-lg-4 {
+        flex: 1 0 100%;
+        margin-bottom: 10em;
     }
 
-    .custom-btn {
-        margin: 0 auto;
-    }
-}
-
-/* Esto es una prueba para la seccion PREMIUM, para que sea el texto responsive y desaparezca la línea negra en pantallas pequeñas */
-
-/* @media (max-width: 768px) {
-    .text-container {
-        flex-direction: column; 
-        padding: 0 6rem; 
-        justify-content: center; 
-        align-items: center; 
-        text-align: center;
+    figure img {
+        max-width: 100%; 
+        height: auto;
     }
 
-    .divider {
-        display: none;
-    }
-
-    .col-5 {
-        width: 100%; 
-    }
-
-    ul {
-        padding-left: 0;
-    }
-
-    li {
-        font-size: 18px;
-    }
-
-    .custom-btn {
-        margin: 0 auto;
-    }
-} */
-
-/* Móviles (pequeños) */
-@media (max-width: 480px) {
-    body {
-        font-size: 14px;   
-    }
-    .text-container {
-        flex-direction: column; 
-        padding: 0 6rem; 
-        justify-content: center; 
-        align-items: center; 
-        text-align: center;
-    }
-
-    .divider {
-        display: none;
-    }
-
-    .col-5 {
-        width: 100%; 
-    }
-
-    ul {
-        padding-left: 0;
-    }
-
-    li {
-        font-size: 18px;
-    }
-
-    .custom-btn {
-        margin: 0 auto;
-    }
-}
-
-/* Tablet en modo paisaje */
-@media (min-width: 900px) and (max-width: 1200px) {
-    body {
+    .btn {
+        width: 100%;
+        margin-top: 0.5em;
+        margin-bottom: 1em;
         font-size: 16px;
     }
-    .text-container {
-        flex-direction: column; 
-        padding: 0 6rem; 
-        justify-content: center; 
-        align-items: center; 
+
+    /* INDEX */
+    #introduccion h1{
+        font-size: 50px;
+    }
+    #nuestra_historia h2{
+        font-size: 40px;
         text-align: center;
     }
-
-    .divider {
-        display: none;
-    }
-
-    .col-5 {
-        width: 100%; 
-    }
-
-    ul {
-        padding-left: 0;
-    }
-
-    li {
-        font-size: 18px;
-    }
-
-    .custom-btn {
-        margin: 0 auto;
-    }
-}
-
-
-/* Tablet en modo retrato */
-@media (min-width: 600px) and (max-width: 900px) {
-    body {
-        font-size: 16px;
-    }
-    .text-container {
-        flex-direction: column; 
-        padding: 0 6rem; 
+    #nuestra_historia .row {
+        display: flex; 
         justify-content: center; 
         align-items: center; 
-        text-align: center;
+        padding-left: 2em;
+        padding-right: 2em;
     }
-
-    .divider {
-        display: none;
-    }
-
-    .col-5 {
-        width: 100%; 
-    }
-
-    ul {
-        padding-left: 0;
-    }
-
-    li {
-        font-size: 18px;
-    }
-
-    .custom-btn {
-        margin: 0 auto;
-    }
-}
-
-/* Móviles (grandes) */
-@media (min-width: 481px) and (max-width: 768px) {
-    body {
-        font-size: 15px; 
-    }
-    .text-container {
-        flex-direction: column; 
-        padding: 0 6rem; 
+    #nuestra_historia figure {
+        display: flex; 
         justify-content: center; 
-        align-items: center; 
+        align-items: center;
+    }
+    #nuestra_historia img {
+        width: 40%;
+    }
+    #guia_tv h1{
+        font-size: 3em;
+    }
+    #guia_tv .smaller-text {
+        font-size: 0.7em;
+        padding-left: 0%;
+    }
+    
+    #recetas_noticias h1 {
+        font-size:3em;
         text-align: center;
+        white-space: nowrap;
     }
-
-    .divider {
-        display: none;
+    #recetas_noticias h3{
+        font-size: 2em;
+        white-space: nowrap;
+        padding-bottom: 0%;
+        justify-content: center;
     }
-
-    .col-5 {
-        width: 100%; 
+    .recetas {
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center; 
     }
-
-    ul {
-        padding-left: 0;
+    #recetas_noticias > div > div {
+        padding: 0rem;
+        justify-content: center;
+        margin-bottom: 0;
     }
-
-    li {
-        font-size: 18px;
+    .recetas img {
+        width: 150%;
+        max-width: none;
+        height: auto;
+        border-radius: 20px;
     }
-
-    .custom-btn {
-        margin: 0 auto;
+    .noticias {
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        padding-bottom: 1em;
+    }
+    .noticias img {
+        width: 150%;
+        max-width: none;
+        height: auto;
+        border-radius: 20px;
     }
 }
-
-
-
