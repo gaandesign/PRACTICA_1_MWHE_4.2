@@ -1,6 +1,14 @@
 # PRACTICA_1_MWHE_4.2
  Marina Garrido y Sara González
 
+<!-- MEDIDAS DE BOOSTRAP EN REM -->
+
+m-0: 0rem
+m-1: 0.25rem
+m-2: 0.5rem
+m-3: 1rem
+m-4: 1.5rem
+m-5: 3rem
 
 
 
