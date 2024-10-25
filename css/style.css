@@ -910,4 +910,8 @@ figure, img {
         height: auto;
         border-radius: 20px;
     }
+
+    .tienda {
+        flex-direction: column;
+    }
 }
