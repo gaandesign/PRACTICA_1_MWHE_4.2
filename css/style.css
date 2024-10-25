@@ -622,6 +622,18 @@ ul {
     margin: 4rem 0;
 }
 
+.menaje {
+    background-color: var(--color-rosa);
+}
+
+.libros {
+    background-color: var(--color-naranja);
+}
+
+.menu_final {
+    background-color: var(--color-marino);
+}
+
 /* MENU FINAL */
 
 #menu_final {
@@ -721,6 +733,7 @@ figure, img {
 .col-12.titulo > hr {
     border: none !important;
     border-top: 0.3rem dashed white !important;
+    background: none;
     width: 50% !important; 
 
 }
