@@ -43,4 +43,10 @@ $(document).ready(function(){
         $("#cookie-popup").fadeOut();
     });   
 
+    // // Maneja el clic en el botón de rechazar cookies
+    // $("#reject-cookies").click(function() {
+    //     $("#cookie-popup").fadeOut();
+    // });
+
+
 });

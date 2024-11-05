@@ -60,7 +60,14 @@ h3 {
     padding: 2rem 0;
 }
 
-.btn-primary {
+hr {
+    height: 0.3rem;
+    background: black;
+    opacity: 100;
+}
+
+.btn-primary {    
+    background-color: var(--color-sazon);
     color: black;
     border: black 0.2rem solid;
     border-radius: 4rem;
@@ -70,18 +77,28 @@ h3 {
     font-size: 2rem;
 }
 
-
-hr {
-    height: 0.3rem;
-    background: black;
-    opacity: 100;
-}
-
 .btn-primary:hover {
-	background-color: #0d6efd;
+    background-color:#d8a420;
+    border:#d8a420 0.2rem solid;
 }
 
-.btn-primary:hover p {
+.btn-custom {
+    background-color: var(--color-azul);
+    color: black;
+    border: black 0.2rem solid;
+    border-radius: 4rem;
+    padding: 1rem 3rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.btn-custom:hover {
+	background-color: #0d6efd;
+    border: #0d6efd 0.2rem solid;
+}
+
+.btn-custom:hover p {
 	color: white;
 }
 
@@ -118,25 +135,24 @@ hr {
 	padding: 2%;
 }
 
-#accept-cookies > .btn-primary {
+nav:nth-child(2) .btn-primary, #menu_final .btn-primary, #cookie-popup .btn-primary {
     background-color: var(--color-azul);
     color: black;
     padding: 10px 20px;
     border: black 0.2rem solid;
-    border-radius: 32px;
+    border-radius: 2rem;
     cursor: pointer;
 	display: flex;
 	justify-content: center;
 }
 
-#accept-cookies > .btn-primary > p {
-	color: black;
+#cookie-popup .btn-primary {
+    padding: 1rem 2rem;
+    font-size: 1.75rem;
 }
 
-#accept-cookies > .btn-primary:hover {
-    border: none;
-    background-color: #0d6efd;
-    color: white;
+#accept-cookies > .btn-primary > p {
+	color: black;
 }
 
 
@@ -228,8 +244,6 @@ nav:nth-child(2) li {
                 } */
 
 nav:nth-child(2) .btn-primary, #menu_final .btn-primary {
-    background-color: var(--color-azul);
-    border-radius: 4rem;
     padding: 0.5rem 2rem;
 }
 
@@ -461,6 +475,10 @@ header hr {
     }
 }
 
+/* BOTÓN GUIA TV */
+
+
+
 /* RECETAS Y NOTICIAS  */
 
 #recetas_noticias {
@@ -485,6 +503,9 @@ header hr {
     padding: 0 3rem;
 }
 
+#recetas_noticias img {
+    border-radius: 4rem;
+}
 
 /* SECCION PREMIUM */
 
@@ -502,6 +523,10 @@ header hr {
 
 #premium h1 {
     line-height: 0.8;
+}
+
+#premium h2 {
+    font-size: 2.5rem;
 }
 
 .smaller-text {
@@ -552,7 +577,7 @@ header hr {
 }
 
 
-ul {
+#premium ul {
     padding-left: 2rem;
 }
 
@@ -560,26 +585,16 @@ ul {
     list-style-type: disc;
     margin-bottom: 1rem; 
     text-align: left;
-    font-size: 24px;
+    font-size: 2rem;
 }
 
-.custom-btn {
-    background-color:#FFCA42;
-    width: 100%;
-    color: rgb(0, 0, 0);          
-    border: 3px solid #000000; 
-    padding: 10px 20px;       
-    font-size: 16px;           
-    border-radius: 35px;       
-    text-transform: uppercase;
-    transition: background-color 0.3s ease;
+#premium .btn-primary {
+    background-color: var(--color-sazon);
+    font-size: 1.5rem;
 }
 
-.custom-btn:hover {
+#premium .btn-primary:hover {
     background-color:#d8a420;
-    border: 3px solid #000000; 
-    color: rgb(0, 0, 0);   
-    text-decoration: underline;      
 }
 
 
