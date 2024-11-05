@@ -60,7 +60,7 @@
     </div>
 
     <header>
-      <nav class="navbar d-none d-lg-flex" id="menu_superior">
+      <nav class="navbar d-none d-xl-flex" id="menu_superior">
         <div class="redes_sociales px-4">
 
           <ul class="navbar-nav flex-row">
@@ -106,7 +106,7 @@
 
       </nav>
 
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar navbar-expand-xl bg-body-tertiary">
         <div class="container-fluid">
 
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -131,7 +131,7 @@
               </li>
 
               <li class="nav-item nav-logo">
-                <a class="nav-link d-flex justify-content-center" id="logo" href="#"><img src="media/favicon/logo.svg" alt="Sazón"></a>
+                <a class="nav-link d-none d-xl-flex justify-content-center" id="logo" href="#"><img src="media/favicon/logo.svg" alt="Sazón"></a>
               </li>
 
               <li class="nav-item">
@@ -152,7 +152,7 @@
                 </ul>
               </li>
               
-              <li class="nav-item">
+              <li class="nav-item d-none d-xl-block">
                 <a class="nav-link" href="#"><button type="button" class="btn btn-primary" id="liveToastBtn">VER TV</button></a>
               </li> 
 
@@ -162,7 +162,7 @@
         </div>
       </nav>
 
-      <hr>
+      <hr class="d-none d-xl-block">
 
     </header>
 
@@ -187,7 +187,7 @@
         <div class="pr-cont container-fluid py-4" id="nuestra_historia">
           <div class="row justify-content-center flex-column flex-xl-row align-items-center">
 
-            <div class="col-xl-3 col-md-6 col-s-1">
+            <div class="col-xl-3 col-md-10">
               <h2 class="display-1">NUESTRA HISTORIA</h2>
               <figure class="d-none d-xl-block">
                 <img src="media/img/POLLO_ASADO.svg" alt="Pollo asado de Sazón">
@@ -195,11 +195,11 @@
 
             </div>
 
-            <div class="col-xl-3 col-md-6 col-s-1">
+            <div class="col-xl-3 col-md-10">
               <p>En <b>Sazón,</b> siempre hemos buscado transmitir nuestra <b>pasión por la cocina</b> y el entretenimiento de una manera auténtica y cercana. Por eso decidimos llevar esa esencia <b>más allá de la pantalla.</b><br><br>Desde el principio, sabíamos que nuestro canal debía reflejar <b>la energía y diversidad</b> que nos caracteriza y transmitirlo de manera clara y vibrante en cada aspecto de nuestro contenido.</p>
             </div>
 
-            <div class="col-xl-3 col-md-6 col-s-1">
+            <div class="col-xl-3 col-md-10">
               <p class="d-none d-xl-block">Queríamos que fuera un lugar no solo para informar, sino también para <b>inspirar, cautivar y enseñar</b> a todos los que se conecten con nosotros desde los más peques de a casa hasta los más experimentados.<br><br>Sazón es más que recetas; es un espacio para <b>compartir historias, momentos y tradiciones.</b> A través de nuestras recetas, mostramos no solo <b>cómo cocinar,</b> sino el por qué detrás de cada plato.</p>
 
               <div class="d-flex justify-content-center">
@@ -693,31 +693,36 @@
           <div class="pr-cont container-fluid py-4">
             <div class="row justify-content-center">
 
-              <div class="col-12 row recetas">
-                <div class="col-sm-12 col-lg-6">
+              <div class="recetas col-12 flex-xl-row flex-lg-column">
+                <div class="col-xl-6 col-lg-12">
                   <h3>RECETAS CON SABOR</h3>
                   <button type="button" class="btn btn-primary">DESCUBRIR</button>
                 </div>
                 
-                <div class="col-6" data-aos="fade-left">
+                <div class="col-xl-6 col-lg-12" data-aos="fade-left">
                   <figure class="d-flex justify-content-center">
                     <img src="media/img/RECETAS_CON_SABOR.jpg" alt="Recetas con sabor">
                   </figure>
                 </div>
+
+                <div class="col-xl-6 col-lg-12 d-none d-lg-flex flex-column align-items-center">
+                  <h3>RECETAS CON SABOR</h3>
+                  <button type="button" class="btn btn-primary">DESCUBRIR</button>
+                </div>
+
               </div>
 
-              <div class="col-12 row noticias">
-                <div class="col-6" data-aos="fade-right">
+              <div class="noticias col-12 flex-xl-row flex-lg-row-reverse">
+                <div class="col-xl-6 col-lg-12" data-aos="fade-right">
                   <figure class="d-flex justify-content-center">
                     <img src="media/img/NOTICIAS_CON_SALSEO.jpg" alt="Noticias con salseo">
                   </figure>
                 </div>
 
-                <div class="col-sm-12 col-lg-6">
+                <div class="col-xl-6 col-lg-12 d-xl-block d-lg-flex flex-column align-items-center">
                   <h3>NOTICIAS CON SALSEO</h3>
                   <button type="button" class="btn btn-primary">DESCUBRIR</button>
                 </div>
-                
                 
               </div>
               
@@ -752,8 +757,8 @@
 
             <div>
               <h2 class="description-text">Descubre las numerosas ventajas como:</h2>
-              <div class="flex-column flex-lg-row mt-4 text-container align-items-start">
-                <div class="col-5 text-left">
+              <div class="flex-column flex-lg-row mt-4 text-container align-items-lg-start align-items-md-center">
+                <div class="col-lg-5 col-md-8 text-left">
                   <ul class="list-unstyled">
                       <li class="specific-menu"><b>Descuentos de hasta el 40% </b>en marcas asociadas.</li>
                       <li class="specific-menu"><b>Newsletter semanal </b>para no perderte ni una.</li>
@@ -762,11 +767,11 @@
                   </ul>
                 </div>
         
-                <div class="d-none d-lg-block col-2 d-flex justify-content-center align-items-center">
+                <div class="d-none d-lg-flex col-2 d-flex justify-content-center align-items-center">
                   <div class="divider"></div>
                 </div>
         
-                <div class="col-5 text-left">
+                <div class="col-lg-5 col-md-8 text-left">
                   <ul class="list-unstyled">
                     <li class="specific-menu">Además, podrás publicar tus mejores recetas en el <b>foro de Sazón, </b>y chefs cualificados de todo el mundo podrán darte los mejores consejos y opiniones.</li>
                   </ul>

@@ -498,7 +498,6 @@ header hr {
     border-radius: 100px 100px 0 0;
 }
 
-
 .recetas, .noticias {
     padding-bottom: 6rem;
 }
@@ -512,7 +511,7 @@ header hr {
 }
 
 #recetas_noticias figure {
-    padding: 0 3rem;
+    padding: 3rem;
 }
 
 #recetas_noticias img {
@@ -826,6 +825,22 @@ figure, img {
         padding: 0;
     }
 
+    h3 {
+        font-size: 4rem;
+    }
+
+    #recetas_noticias > div > div {
+        padding: 0 5rem;
+    }
+
+    #recetas_noticias figure {
+        padding: 1rem;
+    }
+
+    #recetas_noticias img {
+        border-radius: 3rem;
+    }
+
     .text-container {
         padding: 10rem;
     }
@@ -838,12 +853,19 @@ figure, img {
 
 @media screen and (max-width: 1100px){
 
+    #introduccion h1 {
+        padding: 0;
+    }
     .carousel-row img {
         width: 30rem;
     }
 
     .text-container {
         padding: 0;
+    }
+
+    .noticias {
+        padding-bottom: 0;
     }
 
     #tienda img {
@@ -854,134 +876,32 @@ figure, img {
         width: 15%;
         padding: 0 2rem;
     }
+
 }
-/* TABLET  - BREAKPOINT */
-/* TIENDA */
+
 @media screen and (max-width: 800px){
-    #titulo h1 {
-        font-size: 40px;
-        padding: 0;
+    .display-1 {
+        font-size: 3rem;
+    }
+
+    #recetas_noticias img {
+        display: none;
+    }
+
+    .recetas {
+        padding-bottom: 1rem;
+    }
+
+    #tienda img {
+        width: 80%;
+    }
+
+    #menu_final h1 {
         margin: 0;
     }
-
-    #merchandasing, #menaje, #libros{
-        padding: 2.5em 2em;
-    }
-
-
-    #merchandasing h4 {
-        font-size: 20px; 
-        margin-bottom: 10px; 
-    }
-    #menaje h4 {
-        font-size: 20px; 
-        margin-bottom: 10px; 
-    }
-    #libros h4 {
-        font-size: 20px;
-        margin-bottom: 10px;
-    }
-
-    .productos {
-        display: flex; 
-        flex-wrap: wrap; 
-        justify-content: center;
-    }
-
-    .productos .col-lg-4 {
-        flex: 1 0 100%;
-        margin-bottom: 10em;
-    }
-
-    figure img {
-        max-width: 100%; 
-        height: auto;
-    }
-
-    .btn {
-        width: 100%;
-        margin-top: 0.5em;
-        margin-bottom: 1em;
-        font-size: 16px;
-    }
-
-    /* INDEX */
-    #introduccion h1{
-        font-size: 50px;
-    }
-    #nuestra_historia h2{
-        font-size: 40px;
-        text-align: center;
-    }
-    #nuestra_historia .row {
-        display: flex; 
-        justify-content: center; 
-        align-items: center; 
-        padding-left: 2em;
-        padding-right: 2em;
-    }
-    #nuestra_historia figure {
-        display: flex; 
-        justify-content: center; 
-        align-items: center;
-    }
-    #nuestra_historia img {
-        width: 40%;
-    }
-    #guia_tv h1{
-        font-size: 3em;
-    }
-    #guia_tv .smaller-text {
-        font-size: 0.7em;
-        padding-left: 0%;
-    }
-    
-    #recetas_noticias h1 {
-        font-size:3em;
-        text-align: center;
-        white-space: nowrap;
-    }
-    #recetas_noticias h3{
-        font-size: 2em;
-        white-space: nowrap;
-        padding-bottom: 0%;
-        justify-content: center;
-    }
-    .recetas {
-        display: flex; 
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        flex-direction: column-reverse;
-    }
-    #recetas_noticias > div > div {
-        padding: 0rem;
-        justify-content: center;
-        margin-bottom: 0;
-    }
-    .recetas img {
-        width: 150%;
-        max-width: none;
-        height: auto;
-        border-radius: 20px;
-    }
-    .noticias {
-        display: flex; 
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        padding-bottom: 1em;
-    }
-    .noticias img {
-        width: 150%;
-        max-width: none;
-        height: auto;
-        border-radius: 20px;
-    }
-
-    .tienda {
-        flex-direction: column;
-    }
 }
+
+/* TABLET  - BREAKPOINT */
+/* TIENDA */
+
+/* MEDIA QUERIE 800PX lo he copiado en el read.me para hacer unas comprobaciones */

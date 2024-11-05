@@ -347,3 +347,130 @@ m-5: 3rem
     background-color: var(--color-azul);
     border: none;
 }
+
+
+@media screen and (max-width: 800px){
+    #titulo h1 {
+        font-size: 40px;
+        padding: 0;
+        margin: 0;
+    }
+
+    #merchandasing, #menaje, #libros{
+        padding: 2.5em 2em;
+    }
+
+
+    #merchandasing h4 {
+        font-size: 20px; 
+        margin-bottom: 10px; 
+    }
+    #menaje h4 {
+        font-size: 20px; 
+        margin-bottom: 10px; 
+    }
+    #libros h4 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .productos {
+        display: flex; 
+        flex-wrap: wrap; 
+        justify-content: center;
+    }
+
+    .productos .col-lg-4 {
+        flex: 1 0 100%;
+        margin-bottom: 10em;
+    }
+
+
+
+    .btn {
+        width: 100%;
+        margin-top: 0.5em;
+        margin-bottom: 1em;
+        font-size: 16px;
+    }
+
+    /* INDEX */
+    #introduccion h1{
+        font-size: 50px;
+    }
+    #nuestra_historia h2{
+        font-size: 40px;
+        text-align: center;
+    }
+    #nuestra_historia .row {
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    #nuestra_historia figure {
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+    }
+    #nuestra_historia img {
+        width: 40%;
+    }
+    #guia_tv h1{
+        font-size: 3em;
+    }
+    #guia_tv .smaller-text {
+        font-size: 0.7em;
+        padding-left: 0%;
+    }
+    
+    #recetas_noticias h1 {
+        font-size:3em;
+        text-align: center;
+        white-space: nowrap;
+    }
+    #recetas_noticias h3{
+        font-size: 2em;
+        white-space: nowrap;
+        padding-bottom: 0%;
+        justify-content: center;
+    }
+    .recetas {
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+    #recetas_noticias > div > div {
+        padding: 0rem;
+        justify-content: center;
+        margin-bottom: 0;
+    }
+    .recetas img {
+        width: 150%;
+        max-width: none;
+        height: auto;
+        border-radius: 20px;
+    }
+    .noticias {
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        padding-bottom: 1em;
+    }
+    .noticias img {
+        width: 150%;
+        max-width: none;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    .tienda {
+        flex-direction: column;
+    }
+}
