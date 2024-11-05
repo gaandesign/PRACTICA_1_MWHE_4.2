@@ -96,9 +96,10 @@ hr {
 .btn-custom:hover {
 	background-color: #0d6efd;
     border: #0d6efd 0.2rem solid;
+    color: white;
 }
 
-.btn-custom:hover p {
+.btn-custom p:hover {
 	color: white;
 }
 
@@ -129,6 +130,7 @@ hr {
     width: 60%;
 }
 
+
 #cookie-popup p {
     font-size: 2rem;
 	color: black;
@@ -153,6 +155,20 @@ nav:nth-child(2) .btn-primary, #menu_final .btn-primary, #cookie-popup .btn-prim
 
 #accept-cookies > .btn-primary > p {
 	color: black;
+}
+
+/* POP UP SAZON PREMIUM */
+
+.newsletter {
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
+.newsletter form {
+    padding: 4rem;
+    background-color: var(--color-sazon);
+    border: none;
 }
 
 
@@ -593,6 +609,23 @@ header hr {
     background-color:#d8a420;
 }
 
+
+/* FORM PREMIUM */
+
+form {
+    background-color: #F3F3F3;
+    border: black 0.2rem solid;
+    border-radius: 4rem;
+    padding: 5rem;
+}
+
+label, .input-group-text, .form-check-input, .form-control {
+    font-size: 2rem;
+}
+
+form p {
+    font-size: 1.5rem;
+}
 
 /* TIENDA */
 

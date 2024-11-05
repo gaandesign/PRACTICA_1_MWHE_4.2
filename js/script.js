@@ -38,4 +38,13 @@ $(document).ready(function(){
     // });
 
 
+    // POP UP DE SAZÓN PREMIUM
+
+    // setTimeout(function(){
+    //     // Selecciona el toast y lo muestra
+    //     var toastElement = document.getElementById('liveToast');
+    //     var toast = new bootstrap.Toast(toastElement);
+    //     toast.show();
+    // }, 15000);
+
 });
