@@ -475,10 +475,6 @@ header hr {
     }
 }
 
-/* BOTÓN GUIA TV */
-
-
-
 /* RECETAS Y NOTICIAS  */
 
 #recetas_noticias {
@@ -616,6 +612,7 @@ header hr {
 #tienda img {
     border: 10px dashed var(--color-sazon);
     /* margin: 4rem 0; */
+    width: 80%;
 }
 
 
