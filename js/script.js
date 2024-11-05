@@ -16,17 +16,6 @@ window.addEventListener('scroll', () => {
     rotatingSvg.style.transform = `translateX(-50%) rotate(${rotation}deg)`;
 });
 
-// MÁS/MENOS TEXTO DE NUESTRA HISTORIA
-const toggleButton = document.getElementById('toggleButton');
-const collapseElement = document.getElementById('masTexto');
-
-collapseElement.addEventListener('show.bs.collapse', () => {
-    toggleButton.innerText = 'Leer menos';
-});
-
-collapseElement.addEventListener('hide.bs.collapse', () => {
-    toggleButton.innerText = 'Leer más';
-});
 
 
 $(document).ready(function(){
