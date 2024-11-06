@@ -50,3 +50,29 @@ $(document).ready(function(){
         localStorage.setItem("newsletterClosed", "true");
     });
 });
+
+
+// FORMULARIO SAZÓN PREMIUM
+
+// Obtener el botón y el formulario
+const accessButton = document.getElementById("accessForumButton");
+const forumForm = document.getElementById("forumForm");
+
+// Mostrar el formulario cuando se hace clic en el botón
+accessButton.addEventListener("click", function() {
+forumForm.style.display = "flex"; // Cambiar a 'flex' para centrar
+});
+
+// Si deseas un botón para cerrar el formulario, puedes agregar uno en el HTML y usarlo así:
+const closeButton = document.createElement("button");
+closeButton.textContent = "Cerrar";
+closeButton.id = "closeButton";
+forumForm.appendChild(closeButton);
+
+closeButton.addEventListener("click", function() {
+forumForm.style.display = "none"; // Ocultar el formulario
+});
+
+
+
+

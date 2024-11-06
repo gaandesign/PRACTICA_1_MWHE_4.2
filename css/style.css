@@ -548,11 +548,10 @@ header hr {
     border-radius: 100px 100px 0 0;
     overflow: hidden;
     padding: 0 0 10rem 0;
-    text-align: center;
 }
 
-#premium h1 {
-    line-height: 0.8;
+#premium > div:first-child{
+    text-align: center;
 }
 
 #premium h2 {
@@ -631,7 +630,7 @@ header hr {
 /* FORM PREMIUM */
 
 form {
-    background-color: #F3F3F3;
+    background-color: var(--color-sazon);
     border: black 0.2rem solid;
     border-radius: 4rem;
     padding: 5rem;
@@ -644,6 +643,32 @@ label, .input-group-text, .form-check-input, .form-control {
 form p {
     font-size: 1.5rem;
 }
+
+#forumForm {
+    z-index: 200;
+    display: none; /* Inicia oculto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8); /* Blanco con opacidad */
+    justify-content: center;
+    align-items: center;
+}
+
+.form-text {
+    margin-top: 2.25rem;
+}
+
+#premium form > label {
+    text-align: left !important;
+}
+
+#form_textos h1 {
+    line-height: 1.2;
+}
+
 
 /* TIENDA */
 
