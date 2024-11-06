@@ -78,8 +78,8 @@ hr {
 }
 
 .btn-primary:hover {
-    background-color:#d8a420;
-    border:#d8a420 0.2rem solid;
+    background-color:#d8a420 !important;
+    border:#d8a420 0.2rem solid !important;
 }
 
 .btn-custom {
@@ -259,7 +259,7 @@ nav:nth-child(2) li {
                     font-weight: 500;
                 } */
 
-nav:nth-child(2) .btn-primary, #menu_final .btn-primary {
+nav:nth-child(2) .btn-custom, #menu_final .btn-custom {
     padding: 0.5rem 2rem;
 }
 
@@ -675,7 +675,7 @@ form p {
     margin: 7rem 0 0 0;
 }
 
-#menu_final .btn-primary {
+#menu_final .btn-custom {
     left: 45%;
     font-size: 1.5rem;
 }
