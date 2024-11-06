@@ -159,6 +159,11 @@ nav:nth-child(2) .btn-primary, #menu_final .btn-primary, #cookie-popup .btn-prim
 
 /* POP UP SAZON PREMIUM */
 
+#newsletter_popup {
+    z-index: 100;
+    display: none;
+}
+
 .newsletter {
     background: none;
     border: none;
@@ -171,6 +176,16 @@ nav:nth-child(2) .btn-primary, #menu_final .btn-primary, #cookie-popup .btn-prim
     border: none;
 }
 
+.newsletter h1 {
+    padding: 0;
+    margin-bottom: 3rem;
+    font-size: 3.5rem;
+}
+
+.btn-close {
+    font-size: 2rem;
+    color: black !important;
+}
 
 /* MENÚ SUPERIOR */
 

@@ -40,11 +40,13 @@ $(document).ready(function(){
 
     // POP UP DE SAZÓN PREMIUM
 
-    // setTimeout(function(){
-    //     // Selecciona el toast y lo muestra
-    //     var toastElement = document.getElementById('liveToast');
-    //     var toast = new bootstrap.Toast(toastElement);
-    //     toast.show();
-    // }, 15000);
-
+    setTimeout(function(){
+        $("#newsletter_popup").fadeIn();
+      }, 15000);
+    
+    $("#acceptButton, #closeButton").click(function() {
+        $("#newsletter_popup").fadeOut();
+        // Guardar en localStorage que el popup fue cerrado
+        localStorage.setItem("newsletterClosed", "true");
+    });
 });
