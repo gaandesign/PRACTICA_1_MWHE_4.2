@@ -493,31 +493,6 @@ header hr {
 
 /* RECETAS Y NOTICIAS  */
 
-/* #recetas_noticias {
-    background-color: var(--color-verde);
-    border-radius: 100px 100px 0 0;
-}
-
-.recetas, .noticias {
-    padding-bottom: 6rem;
-}
-
-#recetas_noticias .btn-primary, #tienda .btn-primary {
-    background-color: var(--color-sazon);
-}
-
-#recetas_noticias > div > div {
-    padding: 0 8rem;
-}
-
-#recetas_noticias figure {
-    padding: 3rem;
-}
-
-#recetas_noticias img {
-    border-radius: 4rem;
-} */
-
 #recetas_noticias {
     background-color: var(--color-verde);
     border-radius: 100px 100px 0 0;
@@ -763,22 +738,29 @@ footer p {
 
 figure, img {
     width: 100%;
+    border-radius: 3em;
 }
 
+
 #merchandasing .btn-primary, #menaje .btn-primary, #libros .btn-primary {
+    
     border: 0;
     background-color: var(--color-azul);
+    margin-top: 1rem;
 }
 
 #merchandasing h4, #menaje h4, #libros h4 {
     color: white;
     font-size: 3rem;
+    text-align:left;
 }
 .col-12.titulo > hr {
     border: none !important;
     border-top: 0.3rem dashed white !important;
     background: none;
     width: 50% !important; 
+    margin: 0;
+    margin-bottom: 3em;
 
 }
 
@@ -937,9 +919,19 @@ figure, img {
         margin-right: auto;
         display: block;
     }
+
+    /* TIENDA.HTML */
+    #merchandasing h4 {
+        font-size: 2.5rem; 
+    }
+    #merchandasing {
+        padding: 4rem 0; /* Reduce el padding en pantallas pequeñas */
+    }
 }
 
 /* TABLET  - BREAKPOINT */
 /* TIENDA */
+
+
 
 /* MEDIA QUERIE 800PX lo he copiado en el read.me para hacer unas comprobaciones */
