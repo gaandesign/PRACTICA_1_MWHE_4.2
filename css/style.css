@@ -173,7 +173,7 @@ nav:nth-child(2) .btn-primary, #menu_final .btn-primary, #cookie-popup .btn-prim
 .newsletter form {
     padding: 4rem;
     background-color: var(--color-sazon);
-    border: none;
+    border: black 0.2rem solid;
 }
 
 .newsletter h1 {
@@ -518,7 +518,6 @@ header hr {
 
 #recetas_noticias .btn-primary {
     background-color: var(--color-sazon);
-    width: 60%;
 }
 
 #recetas_noticias > div > div {
