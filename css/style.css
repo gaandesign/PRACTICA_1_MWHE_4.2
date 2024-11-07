@@ -927,6 +927,32 @@ figure, img {
         padding: 0 2rem;
     }
 
+      /* TIENDA.HTML */
+      #merchandasing h4 {
+        font-size: 2.5rem; 
+    }
+        #merchandasing {
+        padding: 4rem 0;
+    }
+
+    #merchandasing .productos .col-lg-4,
+    #merchandasing .productos .col-md-6,
+    #merchandasing .productos .col-sm-12 {
+        width: 70%;
+        max-width: 100%;
+    }
+    #menaje .productos .col-lg-4,
+    #menaje .productos .col-md-6,
+    #menaje .productos .col-sm-12 {
+        width: 70%;
+        max-width: 100%;
+    }
+    #libros .productos .col-lg-4,
+    #libros .productos .col-md-6,
+    #libros .productos .col-sm-12 {
+        width: 70%;
+        max-width: 100%;
+    }
 }
 
 @media screen and (max-width: 800px){
@@ -959,11 +985,11 @@ figure, img {
     }
 
     /* TIENDA.HTML */
-    #merchandasing h4 {
+    #merchandasing #menaje #libros h4 {
         font-size: 2.5rem; 
     }
-    #merchandasing {
-        padding: 4rem 0; /* Reduce el padding en pantallas pequeñas */
+    #merchandasing #menaje #libros {
+        padding: 4rem 0;
     }
 }
 
