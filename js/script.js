@@ -1,5 +1,13 @@
 // console.log("online");
 
+// LIBRERIA AOS
+window.onload = function () {
+    AOS.init({
+        duration: 1200,
+        // once: true,
+    });
+};
+
 
 // GIRO ESTRELLA
 const rotatingSvg = document.getElementById('rotating-svg');
@@ -68,11 +76,4 @@ forumForm.style.display = "none"; // Ocultar el formulario
 });
 
 
-// LIBRERIA AOS
-window.onload = function () {
-    AOS.init({
-        duration: 1200,
-        // once: true,
-    });
-};
 
